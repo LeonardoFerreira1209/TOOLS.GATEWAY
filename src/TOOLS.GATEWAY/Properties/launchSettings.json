@@ -1,0 +1,22 @@
+﻿{
+  "profiles": {
+    "TOOLS.GATEWAY (RELEASE)": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": ""
+      },
+      "applicationUrl": "https://localhost:7282;http://localhost:5298"
+    },
+    "TOOLS.GATEWAY (DEBUG)": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Debug"
+      },
+      "applicationUrl": "https://localhost:7282;http://localhost:5298"
+    }
+  }
+}
