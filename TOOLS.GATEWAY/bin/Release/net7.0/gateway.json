@@ -288,7 +288,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://https://toolsuserapi.azurewebsites.net:7282",
+    "BaseUrl": "https://toolsuserapi.azurewebsites.net",
     "RateLimitOptions": {
       "DisableRateLimitHeaders": false,
       "QuotaExceededMessage": "Limite de requisições para a API atingido!",

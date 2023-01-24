@@ -48,9 +48,9 @@ try
     // Se for em produção executa.
     if (builder.Environment.IsProduction())
     {
-        builder.Services
-            .ConfigureTelemetry(configurations)
-            .ConfigureApplicationInsights(configurations);
+        //builder.Services
+        //    .ConfigureTelemetry(configurations)
+        //    .ConfigureApplicationInsights(configurations);
     }
 
     // Continuação do pipeline...

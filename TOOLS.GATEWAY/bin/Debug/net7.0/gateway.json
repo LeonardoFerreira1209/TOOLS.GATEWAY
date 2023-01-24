@@ -6,7 +6,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/application/healthcheck",
@@ -25,7 +26,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/create",
@@ -44,7 +46,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/update",
@@ -63,7 +66,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/updateUserImage/{id}",
@@ -82,7 +86,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/authetication",
@@ -101,7 +106,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/get/{userId}",
@@ -120,7 +126,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/activate/{code}/{userId}",
@@ -139,7 +146,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/claim/addclaim",
@@ -158,7 +166,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/claim/removeclaim",
@@ -177,7 +186,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/getuserrole/{userId}",
@@ -196,7 +206,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/addrole",
@@ -215,7 +226,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/addclaimtorole",
@@ -234,7 +246,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/removeclaimtorole",
@@ -253,7 +266,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/addroletouser",
@@ -272,7 +286,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://toolsuserapi.azurewebsites.net"
+          "Host": "https://toolsuserapi.azurewebsites.net",
+          "Port":  443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/removeroletouser",
@@ -288,7 +303,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://https://toolsuserapi.azurewebsites.net:7282",
+    "BaseUrl": "https://localhost:7282",
     "RateLimitOptions": {
       "DisableRateLimitHeaders": false,
       "QuotaExceededMessage": "Limite de requisições para a API atingido!",
