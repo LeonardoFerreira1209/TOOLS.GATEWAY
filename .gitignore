@@ -364,9 +364,12 @@ FodyWeavers.xsd
 
 /TOOLS.GATEWAY/appsettings.debug.json
 /TOOLS.GATEWAY/gateway.debug.json
-/.vs/TOOLS.GATEWAY/DesignTimeBuild/.dtbcache.v2
-/.vs/ProjectEvaluation/tools.gateway.metadata.v5.2
-/.vs/ProjectEvaluation/tools.gateway.projects.v5.2
-/.vs/TOOLS.GATEWAY/v17/.suo
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json
+/TOOLS.GATEWAY/bin
+.vs
+/TOOLS.GATEWAY/bin/Debug/net7.0/gateway.json
+/TOOLS.GATEWAY/bin/Debug/net7.0/TOOLS.GATEWAY.dll
+/TOOLS.GATEWAY/bin/Debug/net7.0/TOOLS.GATEWAY.pdb
+/TOOLS.GATEWAY/obj/Debug/net7.0/TOOLS.GATEWAY.dll
+/TOOLS.GATEWAY/obj/Debug/net7.0/TOOLS.GATEWAY.pdb
+/.vs/TOOLS.GATEWAY/v17/.futdcache.v2
+/TOOLS.GATEWAY/bin/Debug/net7.0/gateway.json
