@@ -20,7 +20,7 @@
         "PeriodTimespan": 60,
         "Limit": 10
       }
-    }
+    },
     {
       "DownstreamPathTemplate": "/api/user/create",
       "DownstreamScheme": "https",
