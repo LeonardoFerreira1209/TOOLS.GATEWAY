@@ -27,7 +27,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/create",
@@ -47,7 +47,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/update",
@@ -67,7 +67,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/updateUserImage/{id}",
@@ -87,7 +87,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/authetication",
@@ -107,7 +107,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/get/{userId}",
@@ -127,7 +127,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/user/activate/{code}/{userId}",
@@ -147,7 +147,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/claim/addclaim",
@@ -167,7 +167,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/claim/removeclaim",
@@ -187,7 +187,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/getuserrole/{userId}",
@@ -207,7 +207,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/addrole",
@@ -227,7 +227,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/addclaimtorole",
@@ -247,7 +247,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/removeclaimtorole",
@@ -267,7 +267,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port": 80
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/addroletouser",
@@ -287,7 +287,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://toolsuserapi.azurewebsites.net",
-          "Port":  80
+          "Port":  443
         }
       ],
       "UpstreamPathTemplate": "/gateway/role/removeroletouser",
