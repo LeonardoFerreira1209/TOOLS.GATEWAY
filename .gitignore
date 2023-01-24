@@ -373,3 +373,4 @@ FodyWeavers.xsd
 /TOOLS.GATEWAY/obj/Debug/net7.0/TOOLS.GATEWAY.pdb
 /.vs/TOOLS.GATEWAY/v17/.futdcache.v2
 /TOOLS.GATEWAY/bin/Debug/net7.0/gateway.json
+/TOOLS.GATEWAY/TOOLS.GATEWAY.csproj.user
