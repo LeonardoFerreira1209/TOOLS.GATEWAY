@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TOOLS.GATEWAY.props" />
+</Project>
