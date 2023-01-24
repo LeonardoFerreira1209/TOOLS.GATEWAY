@@ -31,12 +31,12 @@ jobs:
           dotnet-version: '7.x'
           include-prerelease: true
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/src/myapp
         #substitute production appsettings entries to appsettings json file
       - name: App Settings Variable Substitution
         uses: microsoft/variable-substitution@v1
         with:
-          files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
+          files: '${{env.DOTNET_ROOT}}/myapp/src/appsettings.json'
         env:
           ApplicationInsights.InstrumentationKey: ${{ secrets.APPINSIGHTS_INSTRUMENTATION_KEY }}
           ApplicationInsights.ConnectionStringApplicationInsightsKey: ${{ secrets.CONNECTION_STRING_APPLICATION_INSIGHTS_KEY }}
@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .net-app-qa
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ${{env.DOTNET_ROOT}}/src/myapp
       
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
