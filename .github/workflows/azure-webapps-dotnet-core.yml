@@ -42,6 +42,7 @@ jobs:
         env:
           ApplicationInsights.InstrumentationKey: ${{ secrets.APPINSIGHTS_INSTRUMENTATION_KEY }}
           ApplicationInsights.ConnectionStringApplicationInsightsKey: ${{ secrets.CONNECTION_STRING_APPLICATION_INSIGHTS_KEY }}
+          ApplicationInsights.CloudRoleName: ${{ secrets.CLOUD_ROLE_NAME }}
           
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
