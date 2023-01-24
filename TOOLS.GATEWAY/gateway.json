@@ -303,7 +303,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://toolsapigateway.azurewebsites.net",
+    "BaseUrl": "https://toolsapigateway.azurewebsites.net:443",
     "RateLimitOptions": {
       "DisableRateLimitHeaders": false,
       "QuotaExceededMessage": "Limite de requisições para a API atingido!",
