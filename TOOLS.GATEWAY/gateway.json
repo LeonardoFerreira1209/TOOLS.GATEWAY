@@ -303,7 +303,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:7282",
+    "BaseUrl": "https://toolsapigateway.azurewebsites.net",
     "RateLimitOptions": {
       "DisableRateLimitHeaders": false,
       "QuotaExceededMessage": "Limite de requisições para a API atingido!",
