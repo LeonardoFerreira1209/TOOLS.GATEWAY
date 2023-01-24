@@ -1,20 +1,299 @@
 ﻿{
-  "ReRoutes": [
+  "Routes": [
+    // TOOLS.USER.API
     {
-      "DownstreamPathTemplate": "api/user",
+      "DownstreamPathTemplate": "/application/healthcheck",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7125
+          "Host": "https://toolsuserapi.azurewebsites.net"
         }
       ],
-      "UpstreamPathTemplate": "/gateway/user/{everything}",
-      "EnableRateLimiting": true,
-      "Period": "10s",
-      "PeriodTimeSpan": 10,
-      "Limit": 10,
-      "UpstreamHttpMethod": [ "POST", "PUT", "PATCH", "GET", "DELETE" ]
+      "UpstreamPathTemplate": "/gateway/user/application/healthcheck",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/user/create",
+      "UpstreamHttpMethod": [ "POST" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/user/update",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/updateUserImage/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/user/updateUserImage/{id}",
+      "UpstreamHttpMethod": [ "PATCH" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/authetication",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/user/authetication",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/get/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/user/get/{userId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/get/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/user/activate/{code}/{userId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/claim/addclaim",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/claim/addclaim",
+      "UpstreamHttpMethod": [ "POST" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/claim/removeclaim",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/claim/removeclaim",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/role/getuserroles/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/role/getuserrole/{userId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/role/addrole",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/role/addrole",
+      "UpstreamHttpMethod": [ "POST" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/role/addclaimtorole",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/role/addclaimtorole",
+      "UpstreamHttpMethod": [ "POST" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/role/removeclaimtorole",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/role/removeclaimtorole",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/role/addroletouser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/role/addroletouser",
+      "UpstreamHttpMethod": [ "POST" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/role/removeroletouser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "https://toolsuserapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/role/removeroletouser",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "RouteIsCaseSensitive": false,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
     }
-  ]
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://https://toolsuserapi.azurewebsites.net:7282",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": false,
+      "QuotaExceededMessage": "Limite de requisições para a API atingido!",
+      "HttpStatusCode": 429,
+      "ClientIdHeader": "TOOLS.USER.API"
+    }
+  }
 }
