@@ -40,8 +40,8 @@ jobs:
         with:
           files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
         env:
-          ApplicationInsights.InstrumentationKey: ${{ secrets.__APPINSIGHTS_INSTRUMENTATION_KEY__ }}
-          ApplicationInsights.ConnectionStringApplicationInsightsKey: ${{ secrets.__CONNECTION_STRING_APPLICATION_INSIGHTS_KEY__ }}
+          ApplicationInsights.InstrumentationKey: ${{ secrets.APPINSIGHTS_INSTRUMENTATION_KEY }}
+          ApplicationInsights.ConnectionStringApplicationInsightsKey: ${{ secrets.CONNECTION_STRING_APPLICATION_INSIGHTS_KEY }}
           
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
