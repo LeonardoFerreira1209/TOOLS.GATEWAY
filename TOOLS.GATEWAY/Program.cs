@@ -14,16 +14,16 @@ try
     // Pegando configurações do appsettings.json.
     var configurations = builder.Configuration;
 
+    // Pegando configurações do gateway.json.
     var gatewayConfigurations = builder.Configuration;
 
     // Pega o appsettings baseado no ambiente em execução.
     configurations
          .SetBasePath(builder.Environment.ContentRootPath).AddJsonFile("appsettings.json", false, true).AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", true, true).AddEnvironmentVariables();
 
+    // Pega o gateway.json baseado no ambiente em execução.
     gatewayConfigurations
          .SetBasePath(builder.Environment.ContentRootPath).AddJsonFile("gateway.json", false, true).AddJsonFile($"gateway.{builder.Environment.EnvironmentName}.json", true, true).AddEnvironmentVariables();
-
-    builder.Services.AddSignalR();
 
     /// <summary>
     /// Chamada das configurações do projeto.
