@@ -34,6 +34,7 @@ try
         .AddEndpointsApiExplorer()
         .AddOptions()
         .ConfigureLanguage()
+        .ConfigureCors()
         .ConfigureApllicationCookie()
         .ConfigureSwagger(configurations)
         .ConfigureDependencies(configurations, builder.Environment)
@@ -69,6 +70,7 @@ try
         .UseStaticFiles()
         .UseCookiePolicy()
         .UseRouting()
+        .UseCors("CorsPolicy")
         .UseSwaggerConfigurations(configurations)
         .UseResponseCaching()
         .UseEndpoints(endpoints =>
